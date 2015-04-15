@@ -1,0 +1,435 @@
+/* Include this file in your html if you are using the CSP mode. */
+
+@charset "UTF-8";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide {
+  display: none !important;
+}
+
+ng\:form {
+  display: block;
+}
+
+.ng-animate-block-transitions {
+  transition:0s all!important;
+  -webkit-transition:0s all!important;
+}
+
+/* show the element during a show/hide animation when the
+* animation is ongoing, but the .ng-hide class is active */
+
+/*******************************/
+
+
+.ng-hide-add-active, .ng-hide-remove {
+  display: block!important;
+}
+
+
+/*******************************/
+.post-animate {
+  overflow: hidden;
+}
+.post-animate.ng-enter {
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.post-animate.ng-enter-active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+
+}
+.post-animate.ng-leave {
+  -webkit-transition: all .2s ease;
+          transition: all .2s ease;
+}
+.post-animate.ng-leave-active {
+  opacity: 0;
+}
+
+/*******************************/
+
+
+
+body{
+  font-family: Georgia, "Times New Roman", Times, "Songti SC", "SimSun", serif;
+}
+
+
+
+/***animate*******/
+
+
+.scale-fade {
+  -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* easeOutQuad */
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* easeOutQuad */
+}
+.scale-fade.ng-enter {
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 0;
+}
+.scale-fade.ng-enter-active {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+}
+.scale-fade.ng-leave {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 1;
+}
+.scale-fade.ng-leave-active {
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  opacity: 0;
+}
+.scale-fade.ng-hide-add {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 1;
+}
+.scale-fade.ng-hide-add.ng-hide-add-active {
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  opacity: 0;
+}
+.scale-fade.ng-hide-remove {
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  display: block !important;
+  opacity: 0;
+}
+.scale-fade.ng-hide-remove.ng-hide-remove-active {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+}
+
+
+.scale-fade-in {
+  -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* easeOutQuad */
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* easeOutQuad */
+}
+.scale-fade-in.ng-enter {
+  transform: scale(3);
+  -ms-transform: scale(3);
+  -webkit-transform: scale(3);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 0;
+}
+.scale-fade-in.ng-enter-active {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+}
+.scale-fade-in.ng-leave {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 1;
+}
+.scale-fade-in.ng-leave-active {
+  transform: scale(3);
+  -ms-transform: scale(3);
+  -webkit-transform: scale(3);
+  opacity: 0;
+}
+.scale-fade-in.ng-hide-add {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 1;
+}
+.scale-fade-in.ng-hide-add.ng-hide-add-active {
+  transform: scale(3);
+  -ms-transform: scale(3);
+  -webkit-transform: scale(3);
+  opacity: 0;
+}
+.scale-fade-in.ng-hide-remove {
+  transform: scale(3);
+  -ms-transform: scale(3);
+  -webkit-transform: scale(3);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  display: block !important;
+  opacity: 0;
+}
+.scale-fade-in.ng-hide-remove.ng-hide-remove-active {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+}
+
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    color: #333;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #1b98f8;
+}
+
+
+/*
+ * -- HELPER STYLES --
+ * Over-riding some of the .pure-button styles to make my buttons look unique
+ */
+.primary-button,
+.secondary-button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 20px;
+}
+.primary-button {
+    color: #fff;
+    background: #1b98f8;
+    margin: 1em 0;
+}
+.secondary-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #666;
+    padding: 0.5em 2em;
+    font-size: 80%;
+}
+
+/*
+ * -- LAYOUT STYLES --
+ * This layout consists of three main elements, `#nav` (navigation bar), `#list` (email list), and `#main` (email content). All 3 elements are within `#layout`
+ */
+#layout, #nav, #list, #main {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make the navigation 100% width on phones */
+#nav {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background: rgb(37, 42, 58);
+    text-align: center;
+}
+/* Show the "Menu" button on phones */
+#nav .nav-menu-button {
+    display: block;
+    top: 0.5em;
+    right: 0.5em;
+    position: absolute;
+}
+
+/* When "Menu" is clicked, the navbar should be 80% height */
+#nav.active {
+    height: 80%;
+}
+/* Don't show the navigation items... */
+.nav-inner {
+    display: none;
+}
+
+/* ...until the "Menu" button is clicked */
+#nav.active .nav-inner {
+    display: block;
+    padding: 2em 0;
+}
+
+
+/*
+ * -- NAV BAR STYLES --
+ * Styling the default .pure-menu to look a little more unique.
+ */
+#nav .pure-menu {
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+#nav .pure-menu-link:hover,
+#nav .pure-menu-link:focus {
+    background: rgb(55, 60, 90);
+}
+#nav .pure-menu-link {
+    color: #fff;
+    margin-left: 0.5em;
+}
+#nav .pure-menu-heading {
+    border-bottom: none;
+    font-size:110%;
+    color: rgb(75, 113, 151);
+}
+
+.pythoncn-label, .firefly-label, .slack-label, .tb-label {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 0.5em;
+    border-radius: 3px;
+}
+
+.tb-label {
+    background: #6699ff;
+}
+
+.pythoncn-label {
+    background: #41ccb4;
+}
+
+.firefly-label {
+    background: #ffc94c;
+}
+
+.slack-label {
+    background: #dd514c;
+}
+
+@media (min-width: 40em) {
+
+    #layout {
+        position: relative;
+    }
+
+    #nav {
+        width:220px;
+        height: 100%;
+    }
+
+    /* Show the menu items on the larger screen */
+    .nav-inner {
+        display: block;
+        padding: 2em 0;
+    }
+
+    #nav .nav-menu-button {
+        display: none;
+    }
+    #nav, #list {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow: auto;
+    }
+
+    #main {
+        position: fixed;
+        top: 40px;
+        right: 60px;
+        bottom: 0;
+        left: 260px;
+        overflow: auto;
+        width: auto; /* so that it's not 100% */
+    }
+
+}
+
+.sk-spinner-chasing-dots.sk-spinner {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    -webkit-animation: sk-chasingDotsRotate 2s infinite linear;
+    animation: sk-chasingDotsRotate 2s infinite linear; }
+.sk-spinner-chasing-dots .sk-dot1, .sk-spinner-chasing-dots .sk-dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    border-radius: 100%;
+    -webkit-animation: sk-chasingDotsBounce 2s infinite ease-in-out;
+    animation: sk-chasingDotsBounce 2s infinite ease-in-out; }
+.sk-spinner-chasing-dots .sk-dot2 {
+    top: auto;
+    bottom: 0px;
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s; }
+
+@-webkit-keyframes sk-chasingDotsRotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); } }
+
+@keyframes sk-chasingDotsRotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); } }
+
+@-webkit-keyframes sk-chasingDotsBounce {
+    0%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0); }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1); } }
+
+@keyframes sk-chasingDotsBounce {
+    0%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0); }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1); } }
+
+.ng-pristine {
+    min-height: 50px;
+}
