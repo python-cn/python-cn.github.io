@@ -22,6 +22,8 @@ PS: virtualenv是一个虚拟环境, 主要解决多python环境下依赖不相�
 ```python
 $git clone https://github.com/python-cn/firefly # 克隆代码到本地
 $cd firefly
+$cp firefly/local_settings.py.example firefly/local_settings.py # local_settings.py是本地配置, 包含数据
+库, oauth2等不适合放入版本库敏感数据,以及对一些配置项的自定义
 $virtualenv venv  # 在当前目录下生成一个venv目录, 这个目录就是你的虚拟环境
 $source venv/bin/activate # 激活环境, 如果你想从这个环境中离开, 可以执行`deactivate`
 $pip install -r requirements.txt # 安装firefly的python依赖
