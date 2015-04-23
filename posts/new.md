@@ -27,6 +27,8 @@ $cp firefly/local_settings.py.example firefly/local_settings.py # local_settings
 $virtualenv venv  # 在当前目录下生成一个venv目录, 这个目录就是你的虚拟环境
 $source venv/bin/activate # 激活环境, 如果你想从这个环境中离开, 可以执行`deactivate`
 $pip install -r requirements.txt # 安装firefly的python依赖
+$pip install -r py2-requirements.txt # 假如你是用python2还需要安装这个依赖
+# 安装开发依赖, 不做开发不需要安装
 $pip install -r dev-requirements.txt # 安装开发依赖
 $pre-commit install -t pre-push # 假如你希望对flake8做本地检查可以安装这个git-hook. 以后每次你的push都会跑一遍对当前提交代码中的检查
 ```
@@ -35,7 +37,9 @@ PS: pre-commit请放心使用, 代码是我写的.
 
 #### 前端开发
 
-假如你希望能够自己向全栈方向, 或者是前端工程师或者喜欢想尝试做一些前端的开发. 建议配置本开发环境(这属于增强功能不强制)
+开发角度, 假如你希望能够自己向全栈方向, 或者是前端工程师或者喜欢想尝试做一些前端的开发. 建议配置本开发环境(这属于增强功能不强制)
+
+使用角度. 假如你想跑起来看看效果, 也需要执行下面的配置(项目代码中没有样式文件, 需要执行grunt生成 - 执行一次就好了)
 
 这个环境帮你做的:
 
