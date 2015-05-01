@@ -3,6 +3,25 @@ title: firefly新手引导
 
 假如你想参与firefly的开发, 请详细阅读此文.
 
+**安装MongoDB**
+
+linux用户: http://docs.mongodb.org/manual/administration/install-on-linux/
+
+OSX用户: http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/
+
+当登陆mongo的cli的时候有这样的提示就说明成功了
+
+```
+mongo
+MongoDB shell version: 2.6.8
+connecting to: test
+>
+```
+
+**安装redis**
+
+请参照 http://redis.io/topics/quickstart 或者其他文档.
+
 #### 配置环境
 
 目前还没有做python3的支持, 所以需要有Python2. 个人建议使用python2.7,
@@ -56,6 +75,10 @@ PS: pre-commit请放心使用, 代码是我写的.
         sudo gem install sass
         npm install
         node_modules/grunt-cli/bin/grunt # 如果你不喜欢占用一个终端, 可以使用tmux或者screen
+
+#### 填充测试数据
+
+待补充...
 
 #### 启动firefly
 
