@@ -16,3 +16,6 @@ url: material.md
 title: 一个程序员的情怀(选读)
 url: pythonista.md
 -------
+title: firefly docker使用(选读)
+url: firefly-docker-tutorial.md
+-------
