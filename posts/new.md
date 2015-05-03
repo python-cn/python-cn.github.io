@@ -30,11 +30,11 @@ connecting to: test
 开发之前需要一些依赖:
 
 ```python
-$sudo apt-get install python-dev # 编译py-bcrypt时会用到
 $sudo easy_install setuptools  # 它里面有pip, 假如系统已经包含pip, 忽略这步
 $pip install --user virtualenv # 安装virtualenv
 
 PS: virtualenv是一个虚拟环境, 主要解决多python环境下依赖不相互影响的问题.
+PS: 你需要Python Development Headers来作为依赖安装py-bcrypt包，如果你使用的是Mac OS或者Windows，你应该已经有了这个依赖。否则如果是Debian系的发行版需要安装python-dev包，如果是RedHat系的发行版需要安装python-devel包。
 ```
 
 #### 初始化firfly的开发环境
