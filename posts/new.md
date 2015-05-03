@@ -30,6 +30,7 @@ connecting to: test
 开发之前需要一些依赖:
 
 ```python
+$sudo apt-get install python-dev # 编译py-bcrypt时会用到
 $sudo easy_install setuptools  # 它里面有pip, 假如系统已经包含pip, 忽略这步
 $pip install --user virtualenv # 安装virtualenv
 
