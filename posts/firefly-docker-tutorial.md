@@ -25,8 +25,8 @@ root@d57a1be6ead:/# git config --global user.email johndoe@example.com
 root@d57a1be6ead:/# cd home/firefly
 root@d57a1be6ead:/home/firefly# git remote rename origin upstream
 root@d57a1be6ead:/home/firefly# git remote add origin http://github.com/xxxx/firefly.git  //这里是填你fork过去的项目地址
-
 ```
+*注* 当git仓库配置好后，请执行`git pull upstream master`来获取最新代码.
 
 
 ## 运行firefly
@@ -34,7 +34,7 @@ root@d57a1be6ead:/home/firefly# git remote add origin http://github.com/xxxx/fir
 root@d57a1be6ead:/# mongod & //启动mongo
 root@d57a1be6ead:/# redis-server & //启动redis
 root@d57a1be6ead:/# cd home/firefly
-root@d57a1be6ead:/home/firefly# source venv/bin/activate
+root@d57a1be6ead:/home/firefly# source venv/bin/activate //如果代码有更新过，最好重新安装一下requirement
 root@d57a1be6ead:/home/firefly# python manage.py runserver //此时firefly运行在docker中的5000端口上
 ```
 *注* 如果需要在宿主机中访问docker中运行的firefly需要在运行时进行一次端口映射，具体来说就是在`$ sudo docker run -t -i halfcrazy/pythoncn-firefly:v1 /bin/bash`执行这一步时，加一个参数 `-p 5000:5000`，将docker中的5000端口绑定到本地主机的5000端口。此时在宿主机的浏览器中打开`127.0.0.1:5000`就可以访问到docker中firefly的5000端口。
