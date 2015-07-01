@@ -72,10 +72,17 @@ PS: pre-commit请放心使用, 代码是我写的.
 2. 其次需要安装ruby(我们会使用gem), 可以到官网 https://www.ruby-lang.org/ 下载安装
 3. 配置firefly的开发环境
 
-        cd firefly/static
-        sudo gem install sass
-        npm install
-        node_modules/grunt-cli/bin/grunt # 如果你不喜欢占用一个终端, 可以使用tmux或者screen
+
+        $ cd firefly/static
+        $ gem sources --remove https://rubygems.org/
+        $ gem sources -a https://ruby.taobao.org/
+        $ gem sources -l
+        *** CURRENT SOURCES ***
+
+        https://ruby.taobao.org
+        $ sudo gem install sass -V
+        $ npm install
+        $ node_modules/grunt-cli/bin/grunt # 如果你不喜欢占用一个终端, 可以使用tmux或者screen
 
 #### 填充测试数据
 
