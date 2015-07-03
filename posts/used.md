@@ -29,6 +29,8 @@ firefly的数据库. 选择Mongodb就是因为社区在早期可能功能特性�
 
 firefly的模板, plim我个人觉得是一个被严重低估的基于mako的模板. 这里用它其实是示范原因. 给想用plim的人一个范例.
 
+**UPDATE** 我们目前准备把它替换成jinja2 具体讨论可见: [Issue92](https://github.com/python-cn/firefly/issues/92),开发详情请关注[trello](https://trello.com/b/JM2OEXPA/firefly)
+
 #### pygments
 
 [pygments](https://bitbucket.org/birkenfeld/pygments-main)也是[pocoo](http://www.pocoo.org/)团队的作品, 提供各种语言的语法高亮, 他是基本所有python开源项目做语法高亮的底层库. 它有非常好的文档
@@ -41,6 +43,11 @@ firefly的模板, plim我个人觉得是一个被严重低估的基于mako的模
 [mistune](https://github.com/lepture/mistune)是[lepture](https://github.com/lepture)写的markdown解析工具. 支持国货
 
 ### 前端的
+
+#### react
+
+[react](https://github.com/facebook/react)可能是目前最火的前端框架. firefly组件都由react来支持. 具体讨论可见: [Issue92](https://github.com/python-cn/firefly/issues/92).
+目前进行中, 欢迎有兴趣得人一起来做.
 
 #### grunt
 [grunt](https://github.com/gruntjs/grunt)是一个javascript的任务处理器(用了才知道).

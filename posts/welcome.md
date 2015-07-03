@@ -40,7 +40,7 @@ title: 欢迎入伙
 目前想做的一些东西:
 
 1. 一个有社交元素的python社区(firefly)
-2. 给[pythoncn-slack](https://pythoncn.slack.com)写个被调戏的机器人
+2. 给[pythoncn-slack](https://pythoncn.slack.com)写个被调戏的机器人 - 完成: [slack_bot](https://github.com/python-cn/slack_bot)
 3. 用react重写本手册
 4. 一个使用markdown可预览的博客应用
 5. 一个web框架

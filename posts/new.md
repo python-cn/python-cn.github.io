@@ -46,9 +46,7 @@ $cp firefly/local_settings.py.example firefly/local_settings.py # local_settings
 库, oauth2等不适合放入版本库敏感数据,以及对一些配置项的自定义
 $virtualenv venv  # 在当前目录下生成一个venv目录, 这个目录就是你的虚拟环境
 $source venv/bin/activate # 激活环境, 如果你想从这个环境中离开, 可以执行`deactivate`
-$pip install -r requirements.txt # 安装firefly的python依赖
 $pip install -r py2-requirements.txt # 假如你是用python2还需要安装这个依赖
-# 安装开发依赖, 不做开发不需要安装
 $pip install -r dev-requirements.txt # 安装开发依赖
 $pre-commit install -t pre-push # 假如你希望对flake8做本地检查可以安装这个git-hook. 以后每次你的push都会跑一遍对当前提交代码中的检查
 ```

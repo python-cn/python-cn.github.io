@@ -3,6 +3,9 @@ title: 开发流程&代码规范
 
 假如你想参与firefly的开发, 请详细阅读此文.
 
+**WARNING** 我们最近在做plim->jinja2的迁移和嵌入react的工作，其他工作暂停迭代(防止新的代码造冲突).
+具体讨论可见: [Issue92](https://github.com/python-cn/firefly/issues/92),开发详情请关注[trello](https://trello.com/b/JM2OEXPA/firefly)
+
 ### 说在前面的话
 
 「再牛掰的人写的程序也会有bug. 」
