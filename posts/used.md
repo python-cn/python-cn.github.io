@@ -25,11 +25,11 @@ firefly的数据库. 选择Mongodb就是因为社区在早期可能功能特性�
 在使用ORM这个问题上一直有很大的争议. 我以前试验过, 使用ORM会减低3-5%的性能. 但是能让代码好看简单很多.
 出现问题也很容易定位. 给想学想用它的人作为一个范例吧.
 
-#### plim
+#### Jinja2
 
-firefly的模板, plim我个人觉得是一个被严重低估的基于mako的模板. 这里用它其实是示范原因. 给想用plim的人一个范例.
+早期firefly使用了plim, 但是由于要使用react,以及plim被大家接受程度, 我们还是换回了jinja2.
 
-**UPDATE** 我们目前准备把它替换成jinja2 具体讨论可见: [Issue92](https://github.com/python-cn/firefly/issues/92),开发详情请关注[trello](https://trello.com/b/JM2OEXPA/firefly)
+有兴趣可以看具体讨论: [Issue92](https://github.com/python-cn/firefly/issues/92),开发详情请关注[trello](https://trello.com/b/JM2OEXPA/firefly)
 
 #### pygments
 
